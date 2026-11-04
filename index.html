@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Posies &amp; Petals | Agriculture, Trading & Preserved Flowers</title>
+<meta name="description" content="Agricultural services, produce and spice trading, and handcrafted preserved flower products.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <nav>
+      <a class="logo" href="#top" aria-label="Posies &amp; Petals home"><img src="assets/posies_petals_logo.png" alt="Posies &amp; Petals"></a>
+      <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-menu"><span></span><span></span><span></span></button>
+      <ul id="nav-menu">
+        <li><a href="#agriculture">Agriculture</a></li>
+        <li><a href="#trading">Trading</a></li>
+        <li><a href="#flowers">Preserved Flowers</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div class="wrap">
+      <h1>From the farm to your table, and to your keepsakes</h1>
+      <p>Agricultural services, quality produce and spice trading, and handcrafted preserved flower products, all under one roof.</p>
+      <a class="btn" href="#contact">Get in touch</a>
+    </div>
+  </div>
+
+  <section id="agriculture">
+    <div class="wrap">
+      <h2>Agricultural Services</h2>
+      <p class="lead">End-to-end support for building and running productive farms.</p>
+      <div class="grid">
+        <div class="card"><div class="icon">🏗️</div><h3>Farm Infrastructure</h3><p>Design and fabrication of farm structures built for your land and crops.</p></div>
+        <div class="card"><div class="icon">🌳</div><h3>Landscape Design</h3><p>Practical, attractive landscapes for farms, estates and commercial spaces.</p></div>
+        <div class="card"><div class="icon">📋</div><h3>Operations Management</h3><p>Day-to-day farm management that keeps output high and costs under control.</p></div>
+        <div class="card"><div class="icon">🥬</div><h3>Hydroponic Container Farms</h3><p>Containerised, soil-free farming systems for year-round growing in a small footprint.</p></div>
+        <div class="card"><div class="icon">🏠</div><h3>Farmer Container Accommodation</h3><p>Comfortable, ready-to-place container housing for farm workers and managers.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="trading" class="alt">
+    <div class="wrap">
+      <h2>Trading</h2>
+      <p class="lead">Reliable sourcing and supply of fresh and dried products, in retail and bulk quantities.</p>
+      <div class="grid">
+        <div class="card"><div class="icon">🌶️</div><h3>Spices</h3><p>Whole and ground spices, carefully sourced and packed.</p></div>
+        <div class="card"><div class="icon">🌸</div><h3>Flowers &amp; Dried Flowers</h3><p>Fresh-cut and dried flowers for events, florists and decor.</p></div>
+        <div class="card"><div class="icon">🍎</div><h3>Fruits</h3><p>Fresh seasonal fruit delivered with care.</p></div>
+        <div class="card"><div class="icon">🥕</div><h3>Vegetables</h3><p>Farm-fresh vegetables for markets, restaurants and retailers.</p></div>
+        <div class="card"><div class="icon">🥜</div><h3>Nuts</h3><p>Quality nuts, raw or roasted, in various pack sizes.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="flowers">
+    <div class="wrap">
+      <h2>Preserved Flower Products</h2>
+      <p class="lead">Real flowers, preserved and set into keepsakes that last.</p>
+      <div class="card">
+        <h3>Handcrafted keepsakes</h3>
+        <p>Each piece is made by hand from real preserved blooms. Custom orders are welcome for weddings, gifts and memorials.</p>
+        <div class="tags">
+          <span>Keychains</span><span>Pendants</span><span>Earrings</span><span>Bookmarks</span><span>Frames</span><span>Custom pieces</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="alt">
+    <div class="wrap">
+      <h2>Contact Us</h2>
+      <p class="lead">Tell us what you need and we'll get back to you.</p>
+      <div class="contact-grid">
+        <div class="info">
+          <p><strong>Email</strong><br>info@yourcompany.com</p>
+          <p><strong>Phone / WhatsApp</strong><br>+00 000 000 0000</p>
+          <p><strong>Location</strong><br>Your City, Your Country</p>
+          <p><strong>Hours</strong><br>Mon to Sat, 9:00 to 17:00</p>
+        </div>
+        <form id="contactForm">
+          <label for="name">Name</label>
+          <input id="name" name="name" required>
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required>
+          <label for="phone">Phone (optional)</label>
+          <input id="phone" name="phone" type="tel">
+          <label for="topic">I'm interested in</label>
+          <select id="topic" name="topic">
+            <option>Agricultural services</option>
+            <option>Trading (produce, spices, flowers, nuts)</option>
+            <option>Preserved flower products</option>
+            <option>Something else</option>
+          </select>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required></textarea>
+          <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px">
+          <button class="btn" type="submit">Send message</button>
+          <p id="status" role="status"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">&copy; <span id="year"></span> Posies &amp; Petals. All rights reserved.</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
