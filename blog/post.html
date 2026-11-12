@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Blog post | Posies &amp; Petals</title>
+<meta name="description" content="Read this post on the Posies &amp; Petals blog.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="blog.css">
+</head>
+<body>
+<div id="site-header" data-root="../" data-auth></div>
+
+<main class="blog-main"><div class="wrap">
+  <article class="post-article" id="article"><p>Loading...</p></article>
+  <section class="comments" id="comments" hidden>
+    <h2>Comments</h2>
+    <div id="comment-list"></div>
+    <form id="commentForm">
+      <label for="cname">Name</label>
+      <input id="cname" maxlength="60" required>
+      <label for="cbody">Comment</label>
+      <textarea id="cbody" maxlength="2000" required></textarea>
+      <input class="hp" type="text" name="website" id="cweb" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <button class="btn" type="submit">Post comment</button>
+      <p class="form-msg" id="cmsg" role="status"></p>
+    </form>
+  </section>
+</div></main>
+<div id="site-footer"></div>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.0/dist/umd/supabase.min.js"></script>
+<script src="../layout.js"></script>
+<script src="config.js"></script>
+<script src="common.js"></script>
+<script src="post.js"></script>
+</body>
+</html>

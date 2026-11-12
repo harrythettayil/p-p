@@ -12,20 +12,7 @@
 </head>
 <body>
 
-<header>
-  <div class="wrap">
-    <nav>
-      <a class="logo" href="#top" aria-label="Posies &amp; Petals home"><img src="assets/posies_petals_logo.png" alt="Posies &amp; Petals"></a>
-      <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-menu"><span></span><span></span><span></span></button>
-      <ul id="nav-menu">
-        <li><a href="#agriculture">Agriculture</a></li>
-        <li><a href="#trading">Trading</a></li>
-        <li><a href="#flowers">Preserved Flowers</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
+<div id="site-header" data-root=""></div>
 
 <main id="top">
   <div class="hero">
@@ -50,7 +37,7 @@
     </div>
   </section>
 
-  <section id="trading" class="alt">
+  <!-- <section id="trading" class="alt">
     <div class="wrap">
       <h2>Trading</h2>
       <p class="lead">Reliable sourcing and supply of fresh and dried products, in retail and bulk quantities.</p>
@@ -76,7 +63,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <section id="contact" class="alt">
     <div class="wrap">
@@ -99,8 +86,8 @@
           <label for="topic">I'm interested in</label>
           <select id="topic" name="topic">
             <option>Agricultural services</option>
-            <option>Trading (produce, spices, flowers, nuts)</option>
-            <option>Preserved flower products</option>
+            <!-- <option>Trading (produce, spices, flowers, nuts)</option>
+            <option>Preserved flower products</option> -->
             <option>Something else</option>
           </select>
           <label for="message">Message</label>
@@ -114,10 +101,9 @@
   </section>
 </main>
 
-<footer>
-  <div class="wrap">&copy; <span id="year"></span> Posies &amp; Petals. All rights reserved.</div>
-</footer>
+<div id="site-footer"></div>
 
+<script src="layout.js"></script>
 <script src="script.js"></script>
 </body>
 </html>

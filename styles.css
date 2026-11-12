@@ -105,3 +105,4 @@ h1,h2,h3,.logo{font-family:var(--font-head)}
   .hero::after{display:none}
   .hero h1{color:#fff;text-shadow:0 3px 18px rgba(0,0,0,.55)}
   .hero p{color:#fff;opacity:1;text-shadow:0 2px 10px rgba(0,0,0,.55)}
+  nav a[aria-current="page"]{color:var(--accent)}

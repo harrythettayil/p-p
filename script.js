@@ -1,14 +1,3 @@
-(function(){
-  var btn=document.querySelector('.menu-toggle'),nav=document.querySelector('nav');
-  btn.addEventListener('click',function(){
-    var open=nav.classList.toggle('open');
-    btn.setAttribute('aria-expanded',open);
-  });
-  document.querySelectorAll('#nav-menu a').forEach(function(a){
-    a.addEventListener('click',function(){nav.classList.remove('open');btn.setAttribute('aria-expanded','false');});
-  });
-})();
-  document.getElementById('year').textContent = new Date().getFullYear();
 
   // SETUP: pick ONE way to receive messages.
   // Option A (default): opens the visitor's email app addressed to this email.
